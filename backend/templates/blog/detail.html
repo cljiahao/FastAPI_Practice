@@ -8,6 +8,11 @@
       >Publish Date: {{blog.created_at.strftime('%Y-%m-%d')}}</small
     >
     <p class="text-secondary my-4">{{blog.content}}</p>
+    <a
+      href="/delete/{{blog.id}}"
+      class="btn btn-outline-danger col-sm-1 justify-content-center"
+      >Delete</a
+    >
   </div>
 </div>
 {% endblock %}
